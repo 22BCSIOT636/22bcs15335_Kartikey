@@ -29,9 +29,16 @@ python app.py
 ```
 
 ## Technologies Used
--Frontend: HTML, CSS
--Backend: Python, Flask
--Prediction Algorithm: Python (basic estimation model)
+### **Frontend**  
+- **HTML**: Used for structuring the web pages.  
+- **CSS**: Used for styling and enhancing the user interface.
+
+### **Backend**  
+- **Python**: Core programming language for application logic.  
+- **Flask**: Lightweight web framework for routing and server-side operations.
+
+### **Prediction Algorithm**  
+- **Python**: Implements a basic estimation model to predict energy bills.
 
 ## License
 This project is licensed under the MIT License.
