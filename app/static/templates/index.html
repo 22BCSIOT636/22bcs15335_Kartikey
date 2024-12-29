@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Consumption Optimizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Energy Consumption Optimizer</h1>
+        <p>Track your energy usage and get cost-saving suggestions!</p>
+        <form id="predictionForm">
+            <textarea id="inputData" placeholder="Enter energy usage data..." required></textarea>
+            <button type="submit">Predict</button>
+        </form>
+        <div id="results" class="results"></div>
+    </div>
+    <script>
+        const form = document.getElementById("predictionForm");
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const inputData = document.getElementById("inputData").value;
+            const response = await fetch("/predict", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ data: inputData })
+            });
+            const result = await response.json();
+            document.getElementById("results").innerHTML = `
+                <h3>Prediction Results</h3>
+                <p><strong>Predicted Monthly Bill:</strong> $${result.predicted_bill}</p>
+                <h4>Suggestions:</h4>
+                <ul>${result.suggestions.map(s => `<li>${s}</li>`).join("")}</ul>
+            `;
+        });
+    </script>
+</body>
+</html>
