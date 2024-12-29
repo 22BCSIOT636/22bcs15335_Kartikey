@@ -27,6 +27,7 @@ pip install -r requirements.txt
 cd app
 python app.py
 ```
+
 ## Technologies Used
 -Frontend: HTML, CSS
 -Backend: Python, Flask
