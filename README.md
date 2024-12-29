@@ -2,8 +2,6 @@
 
 A web application to track energy usage and provide cost-saving optimization suggestions.
 
----
-
 ## **Features**
 
 ### **1. Energy Usage Tracking**  
@@ -12,8 +10,6 @@ A web application to track energy usage and provide cost-saving optimization sug
 
 ### **2. Bill Prediction**  
 - Predict future energy bills using a simple, built-in algorithm.
-
----
 
 ## How to Run
 ### Clone the Repository:
@@ -31,14 +27,10 @@ pip install -r requirements.txt
 cd app
 python app.py
 ```
----
-
 ## Technologies Used
 -Frontend: HTML, CSS
 -Backend: Python, Flask
 -Prediction Algorithm: Python (basic estimation model)
-
----
 
 ## License
 This project is licensed under the MIT License.
