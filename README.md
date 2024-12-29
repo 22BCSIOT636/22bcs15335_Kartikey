@@ -1,24 +1,46 @@
-# Energy Consumption Optimizer
+# **Energy Consumption Optimizer**
 
-A web application to track energy usage and provide optimization suggestions.
+A web application to track energy usage and provide cost-saving optimization suggestions.
 
-## Features
-- **Track Energy Usage:** Enter usage data and get cost-saving suggestions.
-- **Bill Prediction:** Predict future bills using a simple algorithm.
+---
 
-## Project Structure
-- `app/`: Contains the main application files.
-  - `templates/`: HTML templates.
-  - `static/css/`: CSS files for styling.
-- `requirements.txt`: Python dependencies.
+## **Features**
+
+### **1. Energy Usage Tracking**  
+- Input energy consumption data manually.  
+- Receive actionable suggestions to reduce energy costs.  
+
+### **2. Bill Prediction**  
+- Predict future energy bills using a simple, built-in algorithm.
+
+---
 
 ## How to Run
-1. Clone the repository.
-2. Install dependencies: `pip install -r requirements.txt`.
-3. Navigate to the `app/` directory and start the server: `python app.py`.
-4. Open `http://127.0.0.1:5000/` in your browser.
+### Clone the Repository:
+```
+git clone <repository_url>
+cd EnergyConsumptionOptimizer
+```
+### Install Dependencies:
+```
+pip install -r requirements.txt
+```
 
-## Future Enhancements
-- Integrate with real-time energy usage data sources.
-- Use advanced ML models for prediction.
-- Add a database for user-specific tracking.
+### Start the Server:
+```
+cd app
+python app.py
+```
+---
+
+## Technologies Used
+-Frontend: HTML, CSS
+-Backend: Python, Flask
+-Prediction Algorithm: Python (basic estimation model)
+
+---
+
+## License
+This project is licensed under the MIT License.
+
+
