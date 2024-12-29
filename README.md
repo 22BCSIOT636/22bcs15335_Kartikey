@@ -1,2 +1,24 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/jMgR4AG6)
-[![Work in MakeCode](https://classroom.github.com/assets/work-in-make-code-8824cc13a1a3f34ffcd245c82f0ae96fdae6b7d554b6539aec3a03a70825519c.svg)](https://classroom.github.com/online_ide?assignment_repo_id=17607442&assignment_repo_type=AssignmentRepo)
+# Energy Consumption Optimizer
+
+A web application to track energy usage and provide optimization suggestions.
+
+## Features
+- **Track Energy Usage:** Enter usage data and get cost-saving suggestions.
+- **Bill Prediction:** Predict future bills using a simple algorithm.
+
+## Project Structure
+- `app/`: Contains the main application files.
+  - `templates/`: HTML templates.
+  - `static/css/`: CSS files for styling.
+- `requirements.txt`: Python dependencies.
+
+## How to Run
+1. Clone the repository.
+2. Install dependencies: `pip install -r requirements.txt`.
+3. Navigate to the `app/` directory and start the server: `python app.py`.
+4. Open `http://127.0.0.1:5000/` in your browser.
+
+## Future Enhancements
+- Integrate with real-time energy usage data sources.
+- Use advanced ML models for prediction.
+- Add a database for user-specific tracking.
